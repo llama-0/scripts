@@ -2,7 +2,7 @@
 
 if [[ #@ -eq 0 ]]
     then
-    echo "usage: ./docker_rmi repository"
+    echo "usage: ./docker_rmi "repository""
 fi
 
-docker rmi $(docker images | grep -e "$1" | awk {print $3})
+docker rmi $(docker images | grep -e $1 | awk '{print $3}')
