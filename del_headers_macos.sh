@@ -7,7 +7,6 @@ do
 		if [ -f $file ]
 		then
 			l=$(awk '/\/\*\ \ \ \ \ /' $file | wc -l)
-            echo $l
 			if [ $l -gt 3 ]
 			then
 				echo $file
