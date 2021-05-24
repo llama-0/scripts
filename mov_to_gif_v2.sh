@@ -4,7 +4,7 @@
 
 if [[ $# -eq 0 ]]
     then
-    echo 'usage: ./mov_to_gif input.mov'
+    echo 'usage: ./mov_to_gif_v2 input.mov'
     echo 'This will generate a file input.gif'
     exit
 fi
